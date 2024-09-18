@@ -8,6 +8,23 @@ const User = require('../models/user'); // Import User model
 // const User = require('../models/comment'); // Import Comment model
 const path = require("path")
 const app = express();
+
+app.use(cors (
+
+{
+
+origin: ["https://deploy-mern-1whq.vercel.app"],
+
+methods: ["POST", "GET"],
+
+credentials: true
+
+}
+
+));
+
+I
+
 const port = 3000;
 const Grid = require('gridfs-stream');
 const { Readable } = require('stream');
